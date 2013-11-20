@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Clean_up_Reddit
 // @namespace  http://trailbeans.eu/redditcleaner
-// @version    3
+// @version    4
 // @description  Reddit cleaner
 // @match      *://*.reddit.com/*
 // @copyright  2013+, David Trail <userscripts@trailbeans.eu>
@@ -25,3 +25,7 @@ for (i1 = 0; i1 < ad_class_names.length; i1++) {
 		classes[i2].remove();
     }
 }
+
+// The left bar crap leaves a 150px+ margin-left.
+var content = document.getElementsByClassName('content')[0];
+content.style.marginLeft = 0;
