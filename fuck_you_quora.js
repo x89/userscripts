@@ -7,5 +7,6 @@
 // @copyright  2012+, You
 // ==/UserScript==
 
+// Gotta have a commit today!
 $('.modal_signup_background').remove();
 $('.dialog_wrapper').remove();
