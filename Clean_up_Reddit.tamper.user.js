@@ -1,24 +1,25 @@
 // ==UserScript==
 // @name       Clean_up_Reddit
 // @namespace  http://trailbeans.eu/redditcleaner
-// @version    5
+// @version    6
 // @description  Reddit cleaner
 // @match      *://*.reddit.com/*
 // @copyright  2013+, David Trail <userscripts@trailbeans.eu>
 // ==/UserScript==
 
-var ad_class_names = [
-    'goldvertisment',
-    'organic-listing',
-    'show-placeholder',
-    'listing-chooser',
+var classes_to_destroy = [
+	'goldvertisment',
+	'organic-listing',
+	'show-placeholder',
+	'listing-chooser',
 	'goldvertisement',
+	'footer-parent',
     ];
 
 var i1;
 
-for (i1 = 0; i1 < ad_class_names.length; i1++) {
-    var name = ad_class_names[i1];
+for (i1 = 0; i1 < classes_to_destroy.length; i1++) {
+    var name = classes_to_destroy[i1];
     var classes = document.getElementsByClassName(name);
 
     var i2;
