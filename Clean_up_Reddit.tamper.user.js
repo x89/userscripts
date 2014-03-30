@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Clean_up_Reddit
 // @namespace  http://trailbeans.eu/redditcleaner
-// @version    4
+// @version    5
 // @description  Reddit cleaner
 // @match      *://*.reddit.com/*
 // @copyright  2013+, David Trail <userscripts@trailbeans.eu>
@@ -11,7 +11,8 @@ var ad_class_names = [
     'goldvertisment',
     'organic-listing',
     'show-placeholder',
-    'listing-chooser'
+    'listing-chooser',
+	'goldvertisement',
     ];
 
 var i1;
