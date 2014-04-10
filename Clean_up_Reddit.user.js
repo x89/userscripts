@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Clean_up_Reddit
 // @namespace  http://trailbeans.eu/redditcleaner
-// @version    8
+// @version    11
 // @description  Reddit cleaner
 // @match      *://*.reddit.com/*
 // @copyright  2013+, David Trail <userscripts@trailbeans.eu>
@@ -13,7 +13,7 @@ var classes_to_destroy = [
 	'listing-chooser',
 	'goldvertisement', // Gold advert
 	'footer-parent', // Footer. Takes up too much space, nobody uses it
-	'md', // User crap on the right
+	'trending-subreddits',
     ];
 
 var i1;
